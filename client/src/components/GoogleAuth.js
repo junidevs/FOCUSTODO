@@ -7,9 +7,10 @@ import Dashboard from './Dashboard';
 class GoogleAuth extends Component {
     
     componentDidMount(){
-        const clientId='1024729504927-ph0kjnqjtklse9a6vnti8ccn35aga7e0.apps.googleusercontent.com';
-        window.gapi.load('client:auth2',()=>{
-            window.gapi.client.init({
+        //alternative for this string we could read this ID from .env
+            const clientId='1024729504927-ph0kjnqjtklse9a6vnti8ccn35aga7e0.apps.googleusercontent.com';
+                 window.gapi.load('client:auth2',()=>{
+                window.gapi.client.init({
                 clientId,
                 scope:'email'
 
