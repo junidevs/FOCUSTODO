@@ -9,12 +9,12 @@ import FreeDay from './FreeDay';
 const ListTasks = ({tasks,fetchTasks}) => {
 
     const [showFreeDay,setShowFreeDay] = useState(false);
-    const [date, setDate] = useState(new Date()
-        //small workaround for CET timezone  
-       // const UTC_timezone = new Date();
-       //return UTC_timezone.setHours(UTC_timezone.getHours() + 2 );
+    const [date, setDate] = useState(()=>{
+        //small workaround for CET timezone  to avoid problems with timezone between 00:00 and 02:00 regarding to our CET timezone
+        const UTC_timezone = new Date();
+        return UTC_timezone.setHours(UTC_timezone.getHours() + 2 );
         
-    );
+     } );
     const handleCalendarClose = () => console.log("Calendar closed");
     const handleCalendarOpen = () => console.log("Calendar opened");
     const regexHandleDate = /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/;
