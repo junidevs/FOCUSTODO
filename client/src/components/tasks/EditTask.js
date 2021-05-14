@@ -14,8 +14,7 @@ const EditTask = ({todos,updateTask,match,getTask}) => {
     },[])
 
    const onHandleSubmit = (formValues) =>{
-       // console.log(formValues);
-      updateTask(match.params.id,formValues)
+       updateTask(match.params.id,formValues)
     }
 
     return (
