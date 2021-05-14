@@ -22,8 +22,7 @@ switch(type){
         }
         case FETCH_TASKS:
         {
-            //createing new object via {} after that  we are goint to take the list of tasks which are in action.payload variable  and creating 
-            //new object with method mapKeys with 'id' property
+           
             return {...state,..._.mapKeys(payload,'id')};
         }
         case CREATE_TASK:
