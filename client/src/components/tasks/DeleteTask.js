@@ -9,9 +9,7 @@ const DeleteTask = ({todos,getTask,deleteTask,match})=> {
 
     useEffect(()=>{
         //get the id parameter from url
-        getTask(match.params.id)
-       // console.log(props)
-      
+        getTask(match.params.id)    
     },[]);
 
     const actions = (
