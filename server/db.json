@@ -1,44 +1,7 @@
 {
   "todos": [
     {
-      "title": "title",
-      "description": "description",
-      "priority": "high",
-      "day": "1",
-      "month": "2",
-      "year": "2021",
-      "id": 1
-    },
-    {
-      "title": "wynies smieci",
-      "description": "no dobraaa",
-      "priority": "high",
-      "day": "1",
-      "month": "2",
-      "year": "2021",
-      "id": 2
-    },
-    {
-      "title": "testdata",
-      "description": "testdata",
-      "priority": "low",
-      "id": 3
-    },
-    {
-      "title": "test2562356",
-      "description": "test2562356",
-      "priority": "test",
-      "id": 4
-    },
-    {
-      "date": "2021-10-05",
-      "title": "test datatest data",
-      "description": "test data",
-      "priority": "medium",
-      "id": 5
-    },
-    {
-      "title": "task1 updated",
+      "title": "task1 smieciii!!!",
       "priority": "1",
       "description": "task1 updated",
       "date": "2021-05-13",
@@ -102,24 +65,10 @@
     },
     {
       "date": "2021-05-14",
-      "title": "twwwwwwwwwwwwwwwwwww",
-      "description": "twwwwwwwwwwwwwwwwwww",
-      "priority": "2",
-      "id": 15
-    },
-    {
-      "date": "2021-05-14",
       "priority": "2",
       "title": "medium",
       "description": "no prio",
       "id": 16
-    },
-    {
-      "date": "2021-05-14",
-      "title": "teeeeeeeeeeeeeeeeeee",
-      "description": "teeeeeeeeeeeeeeeeeee",
-      "priority": "2",
-      "id": 17
     },
     {
       "date": "2021-05-14",
@@ -132,7 +81,7 @@
       "title": "strange 2",
       "description": "strange 2",
       "priority": "1",
-      "date": "2021-05-1313",
+      "date": "2021-05-13",
       "id": 19
     },
     {
