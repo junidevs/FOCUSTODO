@@ -50,10 +50,10 @@ const TaskRendererHelper = ({tasks,regexHandleDate,date}) => {
                     <div className="--description_Item">
                     Details: {task.description}
                     </div>
-                    <div className="--manage_Item">
+                     <div className="--manage_Item">
                              <Link to={`/todos/edit/${task.id}`} ><img className="icon_helperBox" src={pencilEdit} alt="edit task"/></Link>
-                            <Link to={`/todos/delete/${task.id}`} ><img className="icon_helperBox" src={deleteIcon} alt="edit task"/></Link>
-                    </div>        
+                             <Link to={`/todos/delete/${task.id}`} ><img className="icon_helperBox" src={deleteIcon} alt="edit task"/></Link>
+                        </div>        
                 </div>
                     );           
             }
