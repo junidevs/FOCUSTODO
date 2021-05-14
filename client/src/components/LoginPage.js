@@ -11,8 +11,8 @@ const LoginPage =({signInGoogleHandler,isSignedIn})=> {
     }
     return(
         <div className="login_Container">
-        <h1 className="welcome_Title">Welcome in Focus TODO</h1>
-        <h3 className="short_desc_LoginPage">Check what you can do with us</h3>
+            <h1 className="welcome_Title">Welcome in Focus TODO</h1>
+            <h3 className="short_desc_LoginPage">Check what you can do with us</h3>
             <button onClick={signInGoogleHandler} className="ui green google button"> Sign in with google</button>
         </div>
     );
