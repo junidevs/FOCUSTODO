@@ -64,10 +64,7 @@ class TodoForm extends Component {
         </FormControl>
       )
 
-    //formValues property contains all of values from our form FIELD components via name property
-  
     onHandleSubmit = (formValues) =>{
-       // console.log(formValues);
         this.props.onSubmit(formValues);
     }
     
