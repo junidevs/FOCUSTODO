@@ -6,6 +6,9 @@ import Dashboard from './Dashboard';
 
 class GoogleAuth extends Component {
     
+    state={
+        username:''
+    }
     componentDidMount(){
         //alternative for this string we could read this ID from .env
             const clientId='1024729504927-ph0kjnqjtklse9a6vnti8ccn35aga7e0.apps.googleusercontent.com';
@@ -21,7 +24,7 @@ class GoogleAuth extends Component {
                 this.onAuthChange(this.auth.isSignedIn.get());
                 // this method waiting for changes in state
                 this.auth.isSignedIn.listen(this.onAuthChange);
-
+                this.setState({username:this.auth.currentUser.fe.Ft.xV});
             })
         });
     }
@@ -43,13 +46,17 @@ class GoogleAuth extends Component {
         this.auth.signOut();
     }
 
+    usernameHandle = ()=>{
+        console.log(this.auth.currentUser.get());
+    } 
+
     render(){
         return(
         <>
             {
              this.props.isSignedIn 
              ?  
-                 <Dashboard username={this.auth.currentUser.get().ft.qU}  signOutGoogleHandler={this.signOutGoogleHandler} /> 
+                 <Dashboard username={this.state.username}   signOutGoogleHandler={this.signOutGoogleHandler} /> 
              : 
                  <LoginPage signInGoogleHandler={this.signInGoogleHandler}/> 
              }
