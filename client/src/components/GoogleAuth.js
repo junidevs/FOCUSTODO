@@ -11,7 +11,7 @@ class GoogleAuth extends Component {
     }
     componentDidMount(){
         //alternative for this string we could read this ID from .env
-            const clientId='1024729504927-ph0kjnqjtklse9a6vnti8ccn35aga7e0.apps.googleusercontent.com';
+            const clientId='YOURCLIENTIDHERE';
                  window.gapi.load('client:auth2',()=>{
                 window.gapi.client.init({
                 clientId,
